@@ -1,0 +1,7 @@
+# Improving priorities in the mq-deadline scheduler
+ACTION=="add|change", ATTR{queue/scheduler}=="mq-deadline", ATTR{queue/iosched/writes_starved}="1"
+ACTION=="add|change", ATTR{queue/scheduler}=="mq-deadline", ATTR{queue/iosched/write_expire}="1000"
+ACTION=="add|change", ATTR{queue/scheduler}=="mq-deadline", ATTR{queue/iosched/front_merges}="0"
+# Forced I/O multithreading
+ACTION=="add|change", SUBSYSTEM=="block", ATTR{queue/rq_affinity}="1"
+ACTION=="add|change", SUBSYSTEM=="block", ATTR{queue/iosched/fifo_batch}=="32"
