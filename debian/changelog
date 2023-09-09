@@ -1,3 +1,9 @@
+tileos-system-adjustments (1.1-1~tileos) unstable; urgency=medium
+
+  * Add /sbin to PATH
+
+ -- Aleksey Samoilov <samoilov.lex@gmail.com>  Sat, 09 Sep 2023 22:43:51 +0400
+
 tileos-system-adjustments (1.0-1~tileos) unstable; urgency=medium
 
   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
